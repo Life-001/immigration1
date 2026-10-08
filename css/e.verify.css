@@ -194,7 +194,7 @@ nav a{
 .bar6 li{
     display: none;
     list-style: none;
-    width: 330px;
+    width: 300px;
     height: 20px;
     border-bottom: 1px solid rgb(174, 174, 174);
     padding: 20px;
@@ -216,7 +216,8 @@ nav{
 .ver0{
     position: absolute;
     background: rgb(242, 242, 243);
-    width: 1265px;
+    max-width: 1300px;
+    width: 100%;
     height: 650px;
     margin-top: 120px;
     z-index: -1;
@@ -452,4 +453,115 @@ main{
 }
 .fil{
     position: absolute;
+}
+@media (max-width: 1200px){
+    .ima1{
+        position: absolute;
+        width: 150px;
+        height: 70px;
+        margin-left: 150px;
+    }
+    .span{
+        position: absolute;
+        margin-left: -200px;
+        display: flex;
+        gap: 20px;
+        padding-top: 90px;
+        font-size: small;
+    }
+    .tooo{
+        margin-left: 210px;
+        width: 50px;
+        height: 50px;
+    }
+    .ver{
+        padding-left: 120px;
+        font-size: larger;
+    }
+    .ver22{
+        padding-left: 170px;
+    }
+    .box{
+        margin-left: 20px;
+        width: 450px;
+        height: 200px;
+    }
+    .ver2{
+        padding-top: 20px;
+        padding-left: 50px;
+        font-size: large;
+    }
+    .ver3{
+        padding-left: 50px;
+    }
+    .ver5{
+        margin-top: 15px;
+        margin-left: 30px;
+        width: 395px;
+        font-size: small;
+    }
+    .ver6{
+        margin-left: 30px;
+        width: 200px;
+    }
+    .ver7{
+        width: 200px;
+    }
+    .ver8{
+        margin-left: 80px;
+        font-size: x-small;
+    }
+    .qo2{
+        width: 484px;
+        max-width: 1200px;
+        height: 400px;
+    }
+    .qo1{
+        width: 250px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 110px;
+    }
+    .qo3{
+        font-size: large;
+        padding-left: 150px;
+    }
+    .qo4{
+        font-size: large;
+        padding-left: 95px;
+        margin-top: -10px;
+    }
+    .qo5{
+        font-size: large;
+        padding-left: 105px;
+    }
+    .qo6{
+        font-size: large;
+        padding-left: 200px;
+    }
+    .qo7{
+        font-size: large;
+        padding-left: 160px;
+    }
+    .qo8{
+        font-size: large;
+        padding-left: 95px;
+    }
+    .yooo{
+        margin-top: 400px;
+        margin-left: -600px;
+    }
+    .qo{
+        height: 850px;
+        width: 100%;
+        max-width: 1200px;
+    }
+    .qo16{
+        padding-left: 700px;
+        padding-top: 10px;
+    }
+    .qo17{
+    padding-top: 730px;
+    padding-left: 10px;
+    }
 }
