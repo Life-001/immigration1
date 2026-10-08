@@ -1,26 +1,52 @@
-nav{
-    padding: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    width: 100%;
+    min-height: 110px;
+    padding: 15px 4%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    height: 10px;
     position: relative;
-    z-index: 2;
+    background: white;
+    z-index: 10;
 }
 #jo5{
-    
-    position: fixed;
-    margin-left: 1000px;
+    position: absolute;
+    top: 15px;
+    right: 4%;
     width: 150px;
-    height: 20px;
-    font-size: medium;
+    height: 32px;
+    font-size: 14px;
     color: rgb(72, 70, 70);
     border: 1px solid rgb(146, 143, 143);
     cursor: pointer;
-    z-index: 1;
+    background: white;
+    z-index: 20;
 }
-.ima1{
+.ima1 {
     width: 200px;
-    height: 95px;
+    height: auto;
     margin-left: 20px;
 }
 .li1, .li2, .span4, .span5, .span6, .span7:hover{
@@ -32,175 +58,85 @@ nav li{
 nav li:hover{
     transform: scale(1.05);
     background-color: green;
-    
     cursor: pointer;
 }
-.span{
+.span {
     display: flex;
-    gap: 30px;
-    padding-top: 30px;
+    align-items: center;
+    gap: 25px;
+    margin-right: 180px;
 }
-.span1{
-    margin-left: 160px;
-    text-decoration: none;
+
+.span > a, .span > div > a {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.span1 {
     color: rgb(39, 142, 39);
-    font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
 }
-.span2{
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
-}
-.span3{
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
-}
-nav a{
-    text-decoration: none;
+
+.span2, .span3, .span4, .span5, .span6, .span7 {
     color: black;
 }
-.li1{
-    position: absolute;
+
+.span1:hover, .span2:hover, .span3:hover, .span4:hover, .span5:hover,
+.span6:hover, .span7:hover {
+    color: green;
 }
-.bar1 li{
+.bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
+    position: relative;
+}
+
+.li1, .li2, .li3, .li4, .li5, .li6 {
     display: none;
-    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 330px;
-    height: 20px;
-    border-bottom: 1px solid rgb(174, 174, 174);
-    padding: 20px;
-    background-color: white;
-    font-weight: 600;
-    text-decoration: none;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    z-index: 50;
 }
-.bar1:hover li{
+
+.bar1:hover .li1, .bar2:hover .li2, .bar3:hover .li3,
+.bar4:hover .li4, .bar5:hover .li5, .bar6:hover .li6 {
     display: block;
 }
-.li2{
-    position: absolute;
-}
-.bar2 li{
-    list-style: none;
-    width: 330px;
-    height: 20px;
-    border-bottom: 1px solid rgb(174, 174, 174);
-    padding: 20px;
-    background-color: white;
-    font-weight: 600;
-    text-decoration: none;
-    display: none;
-}
-.bar2:hover li{
+
+.li1 li, .li2 li, .li3 li, .li4 li, .li5 li, .li6 li {
     display: block;
-}
-.span4{
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
-}
-.li3{
-    position: absolute;
-}
-.bar3 li{
-    display: none;
     list-style: none;
-    width: 330px;
-    height: 20px;
+    width: 100%;
+    min-height: 45px;
+    padding: 12px 15px;
     border-bottom: 1px solid rgb(174, 174, 174);
-    padding: 20px;
-    background-color: white;
+    background: white;
     font-weight: 600;
-    text-decoration: none;
 }
-.bar3:hover li{
+
+.li1 li:hover, .li2 li:hover, .li3 li:hover, .li4 li:hover,
+.li5 li:hover, .li6 li:hover {
+    background: green;
+    color: white;
+}
+
+.li1 li a, .li2 li a, .li3 li a, .li4 li a, .li5 li a, .li6 li a {
     display: block;
+    font-size: 14px;
+    color: #222;
 }
-.span5{
-    text-decoration: none;
-    color: black;
-   font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
-}
-.li4{
-    position: absolute;
-}
-.bar4 li{
-    display: none;
-    list-style: none;
-    width: 330px;
-    height: 20px;
-    border-bottom: 1px solid rgb(174, 174, 174);
-    padding: 20px;
-    background-color: white;
-    font-weight: 600;
-    text-decoration: none;
-}
-.bar4:hover li{
-    display: block;
-}
-.span6{
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
-}
-.li5{
-    position: absolute;
-}
-.bar5 li{
-    display: none;
-    list-style: none;
-    width: 330px;
-    height: 20px;
-    border-bottom: 1px solid rgb(174, 174, 174);
-    padding: 20px;
-    background-color: white;
-    font-weight: 600;
-    text-decoration: none;
-}
-.bar5:hover li{
-    display: block;
-}
-.span7{
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
-}
-.li6{
-    position: absolute;
-}
-.bar6 li{
-    display: none;
-    list-style: none;
-    width: 330px;
-    height: 20px;
-    border-bottom: 1px solid rgb(174, 174, 174);
-    padding: 20px;
-    background-color: white;
-    font-weight: 600;
-    text-decoration: none;
-}
-.bar6:hover li{
-    display: block;
+
+.li1 li:hover a, .li2 li:hover a, .li3 li:hover a,
+.li4 li:hover a, .li5 li:hover a, .li6 li:hover a {
+    color: white;
 }
 .head{
     background: rgb(145, 97, 15);
     width: 1100px;
     height: 230px;
-    margin-top: 130px;
     margin-left: 90px;
 }
 .head1{
@@ -980,3 +916,199 @@ nav a{
 .fil{
     position: absolute;
 }
+@media (max-width: 1100px){
+        nav {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ima1 {
+        margin-left: 0;
+        width: 170px;
+    }
+
+    .span {
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .head{
+        width: 450px;
+        height: 230px;
+        margin: 20px;
+    }
+    .head1{
+        font-size: large;
+        padding-left: 150px;
+    }
+    .head2{
+        width: 350px;
+        margin-left: 50px;
+        margin-top: 10px;
+        height: 50px;
+        font-size: small;
+    }
+    .shape, .shape1, .shape2, .shape3, .shape4, .shape5 {
+        display: grid;
+        width: 300px;
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .pic, .pic1, .pic2, .pic3, .pic4, .pic5 {
+        width: 200px;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .box{
+        margin-left: 20px;
+        font-size: medium;
+        margin-top: -150px;
+    }
+    .box1, .box2 {
+        margin-left: -80px;
+        font-size: medium;
+        margin-top: -150px;
+    }
+    .box3, .box4, .box5 {
+        margin-left: -50px;
+        font-size: medium;
+        margin-top: -150px;
+    }
+    .fre{
+        padding-left: 100px;
+        font-size: larger;
+    }
+    .fre1{
+        padding-left: 100px;
+        font-size: larger;
+    }
+    .bim, .bim1, .bim2, .bim3, .bim4, .bim5, .bim6, .bim7, .bim8 {
+        display: flex;
+        width: 300px;
+        margin-left: 100px;
+        align-items: center;
+        flex-direction: row;
+    }
+    .bim, .bim2, .bim4, .bim6, .bim8{
+        display:none;
+    }
+     .fre3, .fre5, .fre7, .fre9 {
+        font-size: medium;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .fre2, .fre4, .fre6, .fre8, .fre10 {
+        display: none;
+    }
+    .bim, .bim1, .bim2, .bim3, .bim4, .bim5, .bim6, .bim7, .bim8 {
+        display: flex;
+        width: 300px;
+        margin-left: 100px;
+        align-items: center;
+        flex-direction: row;
+    }
+    .bim, .bim2, .bim4, .bim6, .bim8{
+        display:none;
+    }
+     .fre3, .fre5, .fre7, .fre9 {
+        font-size: medium;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .fre2, .fre4, .fre6, .fre8, .fre10 {
+        display: none;
+    }
+    .boxer{
+        display: none;
+    }
+    bo{
+        display: none;
+    }
+    .visit{
+        padding-left: 100px;
+        font-size: larger;
+        padding-top: 450px;
+    }
+    .visit1{
+        padding-left: 150px;
+        font-size: larger;
+    }
+    .resi{
+        padding-left: 100px;
+        font-size: larger;
+    }
+    .tem, .tem2, .tem4, .tem6, .tem8, .tem10, .tem12{
+        width: 300px;
+    }
+    .tem1, .tem3, .tem5, .tem7, .tem9, .tem11{
+        display: none;
+    }
+    .resi1, .resi3, .resi5, .resi7, .resi9, .resi11, .resi13{
+        font-size: medium;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .resi2, .resi4, .resi6, .resi8, .resi12{
+        display: none;
+    }
+    .qo{
+        height: 750px;
+    }
+    .qo2{
+        width: 400px;
+        height: 350px;
+        margin: 30px;
+    }
+    .qo1{
+        width: 150px;
+        height: 70px;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    .qo3{
+        font-size: medium;
+        padding-left: 130px;
+    }
+    .qo4{
+        font-size: medium;
+        padding-left: 80px;
+        padding-top: 10px;
+    }
+    .qo5{
+        font-size: medium;
+        padding-left: 90px;
+        padding-top: 10px;
+    }
+    .qo6{
+        font-size: medium;
+        padding-left: 170px;
+        padding-top: 10px;
+    }
+    .qo7{
+        font-size: medium;
+        padding-left: 120px;
+        padding-top: 10px;
+    }
+    .qo8{
+        font-size: medium;
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+    .yooo{
+        margin-top: 400px;
+        margin-left: -600px;
+    }
+    .qo16{
+        margin-left: -250px;
+        padding-top: 20px;
+    }
+    .qo17{
+        margin-left: -650px;
+        padding-top: 730px;
+        font-size: small;
+    }
+}
+
